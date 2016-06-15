@@ -1,0 +1,16 @@
+.square {
+	background-color: blue;
+	margin: 1px;
+	display: inline-block;
+	float: left;
+}
+
+#container {
+	background-color: green;
+	width: 800px;
+	height: 800px;
+}
+
+.highlighted {
+	background-color: pink;
+}
