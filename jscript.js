@@ -1,4 +1,4 @@
-$(document).ready(function(){
+function setSize(){
 	var size = prompt("How big a grid do you want?");
 	var dimension = (800 / size) - 2;
 
@@ -7,10 +7,27 @@ $(document).ready(function(){
 			$('#container').append("<div class='square'></div>");
 		}
 	}
+	$(".square").height(dimension);
+	$(".square").width(dimension);
+};
+
+function clearGrid(){
+	$('.square').removeClass('highlighted');
+	$('div').empty();
+	setSize();
+	hover();
+};
+
+function hover(){
 	$(".square").mouseenter(function(){
 		$(this).addClass("highlighted");
 	});
+}
 
-	$(".square").height(dimension);
-	$(".square").width(dimension);
+$(document).ready(function(){
+
+	setSize();
+	hover();
 });
+
+

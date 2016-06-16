@@ -1,16 +1,20 @@
 .square {
-	background-color: blue;
+	background-color: #F7B538;
 	margin: 1px;
 	display: inline-block;
 	float: left;
 }
 
 #container {
-	background-color: green;
+	background-color: #DB7C26;
 	width: 800px;
 	height: 800px;
 }
 
 .highlighted {
-	background-color: pink;
+	background-color: #D8572A;
+}
+
+button {
+	margin-bottom: 5px;
 }
